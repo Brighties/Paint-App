@@ -1,0 +1,104 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+input, button {
+    font: inherit;
+}
+body {
+    accent-color: rgb(23, 118, 182);
+    font-size: 1.3rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#canvas {
+
+    border: 2px solid green;
+    
+}
+h1 {
+        background: linear-gradient(to right, #ff0000, #0000ff, #0000ff, #0000ff); /* Replace these colors with your desired gradient */
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+/* UTILITY CLASSES */
+.flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+.flex-column {
+    flex-direction: column;
+}
+/*     ** COMPONENTS   */
+/* BUTTONS */
+.btn {
+    padding: 0.5em 1em;
+    border: 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-right: 1em;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn--save {
+    background-color: rgb(23, 118, 182);
+    transition: background-color 300ms ease-in-out;
+}
+.btn--save:hover {
+    background-color: green;
+}
+.btn--clear {
+    background-color:#ff0000;
+}
+/* TOOLBOX */
+.toolbox {
+    height: 50px;
+}
+
+/* CONTROLS */
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* FEATURE BLOCK */
+.feature-block {
+    padding: 1em 0;
+  
+    max-width: 800px;
+}
+#penColor {
+    margin-right: 1em;
+}
+
+/* icons */
+.icon--download {
+    margin-right: 10px;
+}
+
+/* ANIMATIONS */
+
+.content-container {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.animated-content {
+    background-color: #3498db;
+    font-style: italic;
+    color: #fff;
+    padding: 1.2rem;
+    border-radius: 5px;
+}

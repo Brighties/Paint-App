@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Paint App</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="flex flex-column">
+      <header>
+        <h1 class="text-center">Paint App</h1>
+      </header>
+
+      <canvas id="canvas" width="600" height="400"></canvas>
+      <section class="flex feature-block">
+        <button class="btn btn--clear">clear</button>
+        <button class="btn btn--save flex align-center">
+          <img
+            class="icon icon--download"
+            src="./images/download_icon.svg"
+            alt="download-icon"
+          />
+
+          Save
+        </button>
+
+        <div>
+          <label for="penColor">Pen Color:</label>
+          <input type="color" value="#ffff00" id="penColor" />
+        </div>
+        <div>
+          <label for="penWidth">Brush Size:</label>
+          <input type="range" min="1" max="20" value="10" id="penWidth" />
+        </div>
+      </section>
+      <div class="imagePreview"></div>
+
+      <div class="content-container">
+        <p class="animated-content">More features to be added later</p>
+      </div>
+    </main>
+
+    <script src="paint_app.js"></script>
+  </body>
+</html>

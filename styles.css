@@ -16,7 +16,8 @@ body {
 }
 
 #canvas {
-
+    width: 600px;
+    height: 400px;
     border: 2px solid green;
     
 }
@@ -30,6 +31,9 @@ h1 {
 /* UTILITY CLASSES */
 .flex {
     display: flex;
+}
+.justify-center {
+    justify-content: center;
 }
 
 .align-center {

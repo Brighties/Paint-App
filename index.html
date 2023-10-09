@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="flex flex-column">
-      <header>
+    <main class="flex flex-column align-center">
+      <header role="heading">
         <h1 class="text-center">Paint App</h1>
       </header>
 
       <canvas id="canvas" width="600" height="400"></canvas>
-      <section class="flex feature-block">
-        <button class="btn btn--clear">clear</button>
-        <button class="btn btn--save flex align-center">
+      <section role="tablist" class="flex feature-block">
+        <button role="button" class="btn btn--clear">clear</button>
+        <button role="button" class="btn btn--save flex align-center">
           <img
             class="icon icon--download"
             src="./images/download_icon.svg"
